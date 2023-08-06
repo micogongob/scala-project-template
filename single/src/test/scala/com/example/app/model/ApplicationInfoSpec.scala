@@ -1,10 +1,11 @@
 import com.example.app.model
 
 import com.example.app.model.ApplicationInfo
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 import java.util.UUID
 
-class ApplicationInfoSpec extends FlatSpec with Matchers {
+class ApplicationInfoSpec extends AnyFlatSpec with Matchers {
   behavior of "ApplicationInfo"
 
   it should "set member fields" in {
