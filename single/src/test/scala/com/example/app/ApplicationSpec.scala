@@ -11,7 +11,7 @@ class ApplicationSpec extends FlatSpec with Matchers with BeforeAndAfter {
   private var mockedHelper: ScalaProjectHelper = _
 
   before {
-    
+    // TODO add mock and tests
   }
 
   it should "fetch details from helper" in {
