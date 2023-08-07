@@ -1,5 +1,6 @@
 import com.example.app
 
+import com.example.app.Application
 import com.example.app.utils.ScalaProjectHelper
 import com.example.app.model.ApplicationInfo
 import org.scalatest.flatspec.AnyFlatSpec
@@ -13,13 +14,17 @@ class ApplicationSpec extends AnyFlatSpec
   with MockFactory {
   behavior of "Application"
 
-  private var mockedHelper: ScalaProjectHelper = _
+  private val mockedHelper = mock[ScalaProjectHelper]
 
   before {
-    // TODO add mock and tests
+    Application.setHelper(mockedHelper)
   }
 
   it should "fetch details from helper" in {
+    // given
+    (mockedHelper.getAppInfo _).expects().returning(ApplicationInfo("test", "0.0.1"))
 
+    // expect
+    noException should be thrownBy Application.main(Array())
   }
 }
