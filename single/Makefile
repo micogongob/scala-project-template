@@ -8,3 +8,6 @@ test:
 
 run:
 	$(RUN_SBT) run
+
+# TODO add web server
+# TODO add dockerized
