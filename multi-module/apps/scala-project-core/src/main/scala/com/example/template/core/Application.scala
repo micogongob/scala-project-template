@@ -1,4 +1,4 @@
-package com.example.template.app
+package com.example.template.core
 
 import com.example.template.commons.utils.ScalaProjectHelper
 

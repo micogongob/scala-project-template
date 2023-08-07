@@ -11,6 +11,6 @@ object Dependencies {
 
   val sharedDependencies: Seq[ModuleID] = Seq() ++ testDependencies
 
-  val libsCommonDependencies: Seq[ModuleID] = Seq()
+  val libsCommonsDependencies: Seq[ModuleID] = Seq()
   val appsCoreDependencies: Seq[ModuleID] = Seq()
 }
