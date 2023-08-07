@@ -1,9 +1,9 @@
 package com.example.template.utils
 
-import com.example.template.model.ApplicationInfo
+import com.example.template.model.Context
 
 class ScalaProjectHelper {
-  def getAppInfo(): ApplicationInfo = {
-    return ApplicationInfo("scala-project-template", "1.0.0")
+  def getContext(): Context = {
+    return Context("scala-project-template", "1.0.0")
   }
 }

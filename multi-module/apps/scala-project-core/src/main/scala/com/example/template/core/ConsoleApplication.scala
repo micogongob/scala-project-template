@@ -1,15 +1,15 @@
-package com.example.template
+package com.example.template.core
 
-import com.example.template.utils.ScalaProjectHelper
+import com.example.template.commons.utils.ScalaProjectHelper
 
-object Application {
+object ConsoleApplication {
   private var helper: ScalaProjectHelper = _
 
   helper = new ScalaProjectHelper()
 
   def main(args: Array[String]): Unit = {
     println("Starting ...")
-    println(s"App info: ${helper.getAppInfo()}")
+    println(s"Info: ${helper.getContext()}")
     println("DONE")
   }
 

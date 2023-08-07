@@ -1,16 +1,16 @@
 import com.example.template.model
 
-import com.example.template.model.ApplicationInfo
+import com.example.template.model.Context
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import java.util.UUID
 
-class ApplicationInfoSpec extends AnyFlatSpec with Matchers {
-  behavior of "ApplicationInfo"
+class Context extends AnyFlatSpec with Matchers {
+  behavior of "Context"
 
   it should "set member fields" in {
     // given
-    val info = ApplicationInfo(
+    val info = Context(
       UUID.randomUUID().toString,
       UUID.randomUUID().toString
     )
