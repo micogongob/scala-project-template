@@ -1,8 +1,8 @@
-import com.example.app
+import com.example.template
 
-import com.example.app.Application
-import com.example.app.utils.ScalaProjectHelper
-import com.example.app.model.ApplicationInfo
+import com.example.template.Application
+import com.example.template.utils.ScalaProjectHelper
+import com.example.template.model.ApplicationInfo
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.BeforeAndAfter

@@ -1,6 +1,6 @@
-package com.example.app.utils
+package com.example.template.utils
 
-import com.example.app.model.ApplicationInfo
+import com.example.template.model.ApplicationInfo
 
 class ScalaProjectHelper {
   def getAppInfo(): ApplicationInfo = {

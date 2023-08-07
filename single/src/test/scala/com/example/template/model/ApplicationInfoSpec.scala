@@ -1,6 +1,6 @@
-import com.example.app.model
+import com.example.template.model
 
-import com.example.app.model.ApplicationInfo
+import com.example.template.model.ApplicationInfo
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import java.util.UUID

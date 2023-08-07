@@ -1,4 +1,4 @@
-package com.example.app.model
+package com.example.template.model
 
 class ApplicationInfo(val name: String, val version: String) {
   override def toString(): String = {

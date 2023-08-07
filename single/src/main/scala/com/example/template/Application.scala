@@ -1,6 +1,6 @@
-package com.example.app
+package com.example.template
 
-import com.example.app.utils.ScalaProjectHelper
+import com.example.template.utils.ScalaProjectHelper
 
 object Application {
   private var helper: ScalaProjectHelper = _
