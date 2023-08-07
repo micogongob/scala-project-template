@@ -16,7 +16,7 @@ class Context extends AnyFlatSpec with Matchers {
     )
 
     // expect
-    info.name should not be empty
-    info.version should not be empty
+    info.greeting should not be empty
+    info.target should not be empty
   }
 }

@@ -1,13 +1,13 @@
 package com.example.template.model
 
-class Context(val name: String, val version: String) {
+class Context(val greeting: String, val target: String) {
   override def toString(): String = {
-    return s"Context(name=$name,version=$version)"
+    return s"Context(greeting=$greeting,target=$target)"
   }
 }
 
 object Context {
-  def apply(name: String, version: String): Context = {
-    return new Context(name, version)
+  def apply(greeting: String, target: String): Context = {
+    return new Context(greeting, target)
   }
 }

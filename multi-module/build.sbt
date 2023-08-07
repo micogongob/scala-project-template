@@ -12,8 +12,10 @@ lazy val libsCommons = project.in(file("libs/scala-project-commons"))
 
 lazy val appsCore = project.in(file("apps/scala-project-core"))
   .enablePlugins(JavaAppPackaging)
+  .enablePlugins(DockerPlugin)
   .settings(
     sharedSettings,
-    libraryDependencies ++= Dependencies.appsCoreDependencies
+    libraryDependencies ++= Dependencies.appsCoreDependencies,
+    dockerBaseImage := Docker.java17
   )
   .dependsOn(libsCommons)

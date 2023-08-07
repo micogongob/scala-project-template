@@ -22,7 +22,7 @@ class ConsoleApplicationSpec extends AnyFlatSpec
 
   it should "fetch details from helper" in {
     // given
-    (mockedHelper.getContext _).expects().returning(Context("test", "0.0.1"))
+    (mockedHelper.getContext _).expects().returning(Context("random", "test"))
 
     // expect
     noException should be thrownBy ConsoleApplication.main(Array())

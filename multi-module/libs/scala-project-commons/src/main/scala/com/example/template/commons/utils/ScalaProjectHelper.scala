@@ -4,6 +4,8 @@ import com.example.template.commons.model.Context
 
 class ScalaProjectHelper {
   def getContext(): Context = {
-    return Context("scala-project-template", "1.0.0")
+    val greeting = sys.env.getOrElse("GREETING", "Hello")
+    val target = sys.env.getOrElse("TARGET", "World")
+    return Context(greeting, target)
   }
 }
