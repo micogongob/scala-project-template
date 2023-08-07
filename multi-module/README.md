@@ -12,4 +12,4 @@
     $ make test
 
 ### run console app
-    $ make run
+    $ make core
