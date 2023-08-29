@@ -1,7 +1,11 @@
 # mac
 **/.DS_Store
 
+# intellij
+**/.idea
+
 # sbt
+**/.bsp
 **/project/project/
 **/project/target/
 **/target/
